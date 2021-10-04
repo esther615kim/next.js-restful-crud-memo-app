@@ -1,9 +1,9 @@
 .nav {
     height: 50px;
     padding: 10px;
-    background: hsla(348, 2%, 48%, 0.466);
+    background: hsl(22, 68%, 49%);
     /* background: #b57fb3; */
-    color:#000;
+    color:#fff;
     font-weight: 600;
     display: flex;
     align-items: center;
