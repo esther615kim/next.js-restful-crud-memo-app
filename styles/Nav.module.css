@@ -1,8 +1,10 @@
 .nav {
     height: 50px;
     padding: 10px;
-    background: #212121;
-    color: #fff;
+    background: hsla(348, 2%, 48%, 0.466);
+    /* background: #b57fb3; */
+    color:#000;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: flex-start;
