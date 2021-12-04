@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project overview
+
+to-be-updated
 
 ## Getting Started
 
@@ -6,29 +8,34 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Stack used
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Changelog
 
-## Learn More
+All notable changes to this project will be documented in this file.
 
-To learn more about Next.js, take a look at the following resources:
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### [Unreleased]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[0.0.2] -2021-12-04
 
-## Deploy on Vercel
+- `Added` message components and message page
+- `Changed` README.md
+- `Installed` npm install sass
+- `Fixed`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### References
 
+- Next.js built-in-css-support https://nextjs.org/docs/basic-features/built-in-css-support
+- Github changelog https://github.blog/changelog/
+- changelog format https://keepachangelog.com/en/1.0.0/
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
