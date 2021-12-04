@@ -1,9 +1,9 @@
-import React from "react";
+import MsgList from "../components/message/MsgList";
 
 function message() {
   return (
     <div>
-      <h3>message page</h3>
+      <MsgList />
     </div>
   );
 }
