@@ -1,11 +1,13 @@
 import MsgCard from "./MsgCard";
+import MsgInput from "./MsgInput";
 import styled from "styled-components";
+import { useState } from "react";
 
 const randomIds = ["roy", "jay"];
 const getRandomId = () => randomIds[Math.round(Math.random())]; // randomly pick either chuchu or macey
 
 // #1 generate 50-item mock data
-const msgs = Array(20)
+const mockMsgs = Array(20)
   .fill(0)
   .map((_, index) => ({
     id: index + 1,
@@ -15,31 +17,29 @@ const msgs = Array(20)
   }))
   .reverse(); // recent order;
 
-// #2 create mock data manually
-// const msgs = [
-//   {
-//     id: 1,
-//     userId: getRarndomUserId(),
-//     timestamp: 1234567890123,
-//     text: "1 mock text", // needs 13-digit number
-//   },
-//   {
-//     id: 2,
-//     userId: getRarndomUserId(),
-//     timestamp: 1234567890124,
-//     text: "2 mock text", // needs 13-digit number
-//   },
-// ];
 const StyledUl = styled.ul`
   list-style: none;
 `;
 
-const MsgList = () => (
+export default function MsgList() {
+  const [msgs, setMsgs] = useState(mockMsgs);
+
+  const addNewMsgs = (text) => {
+    // new msg format
+    const newMsg = {
+      id: msgs.length, // +1
+      userId: getRandomId(),
+      timestamp: Date.now(),
+      text: `${msgs.length} ${text}`, // +1
+    };
+    setMsgs((msgs) => [newMsg, ...msgs]); //
+    console.log("msgs", msgs);
+  };
+
   <StyledUl className="message-list">
+    <MsgInput mutate={addNewMsgs} />
     {msgs.map((item) => (
       <MsgCard key={item.id} {...item} /> // spread => props
     ))}
-  </StyledUl>
-);
-
-export default MsgList;
+  </StyledUl>;
+}

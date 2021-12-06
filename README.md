@@ -26,6 +26,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### [Unreleased]
 
+[0.0.2] -2021-12-06
+
+- `Added` MsgInput component
+- `Changed` MsgList.jsx in order to add MsgInput component
+- `bug` Error: MsgList(...): Nothing was returned from render. This usually means a return statement is missing. Or, to render nothing, return null.
+
 [0.0.2] -2021-12-04
 
 - `Added` message components and message page
@@ -38,4 +44,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Next.js built-in-css-support https://nextjs.org/docs/basic-features/built-in-css-support
 - Github changelog https://github.blog/changelog/
 - changelog format https://keepachangelog.com/en/1.0.0/
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

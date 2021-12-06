@@ -1,17 +1,23 @@
 // form
 import React, { useRef } from "react";
 
-function MsgInput(mutate) {
+function MsgInput({ mutate, text = "", id = undefined }) {
   const textRef = useRef(null);
-  const text = textRef.current.value;
+
   const onSubmit = (e) => {
     e.preventDefault();
     e.stopPropagation(); // stop bubbling
+    textRef.current.value = "";
+    mutate(text, id);
   };
   return (
     <div>
       <form action="submit" onSubmit={onSubmit}>
-        <textarea ref={textRef} placeholder="write a memmo" />
+        <textarea
+          ref={textRef}
+          defaultValue={text}
+          placeholder="write a memmo"
+        />
         <button type="submit">Add</button>
       </form>
     </div>
