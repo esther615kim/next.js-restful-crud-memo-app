@@ -1,5 +1,6 @@
 import navStyles from '../styles/Nav.module.css'; //변수명 마음대로 커이
 import Link from 'next/link';
+import React from "react";
 
 const Nav = () => {
     return (

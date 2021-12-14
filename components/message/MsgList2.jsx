@@ -1,5 +1,8 @@
-import React, { useState } from "react";
 import MsgCard from "./MsgCard";
+import React from "react";
+// import MsgInput from "./MsgInput";
+import { StyledUl } from "./message.styled";
+import { useState } from "react";
 
 const randomIds = ["roy", "jay"];
 const getRandomId = () => randomIds[Math.round(Math.random())]; // randomly pick either chuchu or macey
@@ -9,7 +12,7 @@ const mockMsgs = Array(20)
   .fill(0)
   .map((_, index) => ({
     id: index + 1,
-    user: getRandomId(),
+    userId: getRandomId(),
     timestamp: 1234567890123 + index * 1000 * 60, // i*second *minute =>  update per minute
     text: `${index + 1}th mock text msg`,
   }))
@@ -20,10 +23,9 @@ export default function MsgList() {
 
   const addNewMsgs = (text) => {
     // new msg format
-
     const newMsg = {
       id: msgs.length, // +1
-      user: getRandomId(),
+      userId: getRandomId(),
       timestamp: Date.now(),
       text: `${msgs.length} ${text}`, // +1
     };
@@ -32,11 +34,12 @@ export default function MsgList() {
   };
 
   return (
-    <>
+    <StyledUl>
+      <h3>리스트</h3>
+      {/* <MsgInput mutate={addNewMsgs} /> */}
       {msgs.map((item) => (
-        // card
-        <MsgCard key={item.id} {...item} />
+        <MsgCard key={item.id} {...item} /> // spread => props
       ))}
-    </>
+    </StyledUl>
   );
 }

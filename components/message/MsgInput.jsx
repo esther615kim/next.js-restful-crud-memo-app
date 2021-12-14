@@ -1,5 +1,6 @@
 // form
 import React, { useRef } from "react";
+import styled from "styled-components";
 
 function MsgInput({ mutate, text = "", id = undefined }) {
   const textRef = useRef(null);

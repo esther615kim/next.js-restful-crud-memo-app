@@ -1,4 +1,5 @@
 import articleStyles from "../styles/Article.module.css";
+import React from "react";
 
 export default function ArticleList({ articles }) {
   const newsArticles = articles.response.docs;

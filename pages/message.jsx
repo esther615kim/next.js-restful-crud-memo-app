@@ -1,4 +1,5 @@
 import MsgList from "../components/message/MsgList";
+import React from "react";
 
 function message() {
   return (

@@ -26,11 +26,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### [Unreleased]
 
-[0.0.2] -2021-12-06
+[0.0.4] -2021-12-13
+
+- `Fixed` importing next/documnet outside of pages/\_document error https://stackoverflow.com/questions/69061240/nextjs-importing-next-document-outside-of-pages-document-error
+- `bug` Unhandled Runtime Error
+  Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `MsgCard`.
+
+[0.0.3] -2021-12-06
 
 - `Added` MsgInput component
 - `Changed` MsgList.jsx in order to add MsgInput component
 - `bug` Error: MsgList(...): Nothing was returned from render. This usually means a return statement is missing. Or, to render nothing, return null.
+  - tred #1 https://stackoverflow.com/questions/69211200/next-js-error-element-type-is-invalid-expected-a-string-for-built-in-componen
 
 [0.0.2] -2021-12-04
 
@@ -38,6 +47,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Changed` README.md
 - `Installed` npm install sass
 - `Fixed`
+
+### To-dos
+
+- ✅Create message box
+- Edit message box
+- Delete message box
+- Add server(node.js)
+- mobile responsive design
 
 ### References
 
