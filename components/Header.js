@@ -4,9 +4,9 @@ import React from "react";
 export default function Header() {
     return (
         <div>
-            <h5 className={headerStyles.title} >
-                👨‍💻👨‍💻Next.js memo-app
-            </h5>
+            <h6 className={headerStyles.title} >
+                👨‍💻Next.js app
+            </h6>
         </div>
     )
 }

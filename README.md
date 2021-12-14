@@ -51,7 +51,8 @@ Check the render method of `MsgCard`.
 ### To-dos
 
 - ✅Create message box
-- Edit message box
+- ✅Update new messages
+- ✅Edit message box
 - Delete message box
 - Add server(node.js)
 - mobile responsive design
